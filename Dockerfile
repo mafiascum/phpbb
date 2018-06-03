@@ -1,7 +1,7 @@
 FROM php:7.1.14-apache
 EXPOSE 80
 
-ARG PHPBB_URL=https://www.phpbb.com/files/release/phpBB-3.2.1.zip
+ARG PHPBB_URL=https://www.phpbb.com/files/release/phpBB-3.2.2.zip
 
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y unzip libpng-dev imagemagick git netcat \
